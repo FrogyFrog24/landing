@@ -1,0 +1,99 @@
+@import url("./../fonts/stylesheet.css");
+
+* {
+	box-sizing: border-box;
+	font-family: "Roboto Flex";
+	color: #e7e7e7;
+}
+
+:root {
+	--desktop-width: 1440px;
+}
+
+button,
+button:active,
+button:hover {
+	outline: none;
+	cursor: pointer;
+	border: none;
+}
+
+body,
+html {
+	scroll-behavior: smooth;
+	background-color: #000;
+	padding: 0;
+	margin: 0;
+}
+
+.wrapper {
+	max-width: var(--desktop-width);
+	margin: auto;
+}
+
+.badge {
+	position: sticky;
+	top: 0;
+	z-index: 100000000000;
+	margin: auto;
+	width: fit-content;
+	border-radius: 0px 0px 24px 24px;
+	background: rgba(26, 26, 26, 0.8);
+	backdrop-filter: blur(16px);
+	padding: 16px 40px 18px 40px;
+}
+
+.welcome-wrapper {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.logo {
+	margin: auto;
+	width: fit-content;
+	position: relative;
+	z-index: 100;
+}
+
+.cube {
+	width: 600px;
+	position: absolute;
+	top: 80px;
+	left: calc(50% - 280px);
+	opacity: 0.6;
+	z-index: 1;
+}
+
+.welcome-wrapper p {
+	z-index: 100;
+	text-align: center;
+	leading-trim: both;
+	text-edge: cap;
+	font-size: 24px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 110%; /* 26.4px */
+	margin: 16px;
+}
+
+.buy_button {
+	margin-top: 345px;
+	z-index: 100;
+	border-radius: 1120px;
+	background: #9eda3b;
+	box-shadow: -2px -2px 3px 0px #92d02e inset,
+		0px 0px 200px 0px rgba(158, 218, 59, 0.3),
+		2px 2px 4px 0px rgba(255, 255, 255, 0.25) inset;
+	padding: 26px 32px 28px 32px;
+	text-shadow: 0px 0px 24px #619d00;
+	font-family: "Roboto Flex";
+	font-size: 32px;
+	font-style: normal;
+	font-weight: 800;
+	line-height: 80%; /* 25.6px */
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
