@@ -4,7 +4,12 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="./style.css" />
-		<script src="./script.js"></script>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto+Flex:wght@100;200;300;400;500;600;700;800;900;1000&display=swap"
+			rel="stylesheet" />
+		<script src="./script.js" defer></script>
 		<title>/СЛЕШ</title>
 	</head>
 	<body>
@@ -26,17 +31,23 @@
 					<source src="./../assets/main.mp4" type="video/mp4" />
 				</video>
 			</section>
+		</div>
+		<div class="sphere">
+			<img src="./../assets/ellipse.svg" alt="" />
+		</div>
+		<div class="wrapper">
 			<section class="steps-wrapper">
-				<div class="sphere"></div>
-				<h2>
+				<h2 class="steps-wrapper--title">
 					Разберем запрос <br />
 					и выведем тебя <br />
 					на новый уровень
 				</h2>
 				<ul class="steps">
-					<video>
-						<source src="" type="video/mp4" />
+					<video class="steps-video" autobuffer="autobuffer" preload="preload">
+						<source src="./../assets/process.mp4" type="video/mp4" />
 					</video>
+					<div id="scrolly-video"></div>
+					<script type="text/javascript"></script>
 					<div class="steps_line"></div>
 					<li class="step-item">
 						<span class="step_item-title">Заполни небольшую анкету</span>
